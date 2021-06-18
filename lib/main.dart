@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:vttest/paginas/afinador.dart';
+import 'package:vttest/paginas/audio.dart';
 import 'package:vttest/paginas/pedal.dart';
 import 'package:vttest/paginas/metronomo.dart';
 import 'homepage.dart';
+import 'dart:html';
 
 void main() {
   runApp(MyApp());
@@ -24,6 +26,9 @@ class MyApp extends StatelessWidget {
             break;
           case '/cuatro':
             return MaterialPageRoute(builder: (context) => Application());
+            break;
+          case '/cinco':
+            return MaterialPageRoute(builder: (context) => Cinco());
             break;
         }
       },

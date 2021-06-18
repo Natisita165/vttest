@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'dart:html';
 import 'package:fft/fft.dart';
 import 'package:flutter_fft/flutter_fft.dart';
 void main() => runApp(Application());
@@ -78,7 +79,7 @@ class ApplicationState extends State<Application> {
     print("Cargando.....");
     await flutterFft.startRecorder();
     print("Empezó");
-    setState(() => isRecording = flutterFft.getIsRecording);
+    setState(() => {isRecording = flutterFft.getIsRecording},);
     flutterFft.onRecorderStateChanged.listen(
           (data) => {
         setState(

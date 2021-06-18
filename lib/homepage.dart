@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:html';
 
 class HomePage extends StatefulWidget {
   @override
@@ -26,9 +27,10 @@ class _HomePageState extends State<HomePage> {
           ),
           body: Stack(
             children: <Widget>[
-              widGen(0, -0.5, 200, 80, Colors.red[500], Colors.red[500], 'Pedal', '/dos'),
-              widGen(0, 0, 200, 80, Colors.pink[500], Colors.pink[500], 'Metronome', '/tres'),
-              widGen(0, 0.5, 200, 80, Colors.purple[500], Colors.purple[500], 'Afinador', '/cuatro'),
+              widGen(0, -0.7, 200, 80, Colors.red[500], Colors.red[500], 'Pedal', '/dos'),
+              widGen(0, -0.3, 200, 80, Colors.pink[500], Colors.pink[500], 'Metronome', '/tres'),
+              widGen(0, 0.1, 200, 80, Colors.purple[500], Colors.purple[500], 'Afinador', '/cuatro'),
+              widGen(0, 0.5, 200, 80, Colors.teal[500], Colors.teal[500], 'Grabate', '/cinco'),
             ],
           ),
         ),
